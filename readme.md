@@ -39,19 +39,33 @@ Routing, Security Lists or NSGs, and OCI Network Firewall allow the traffic, but
 
 ### ZPR addon configuration and structure
 
+A ZPR Security Attribute Namespace is a logical container for a set of related security attributes. Namespaces help organize security attributes and provide a clear administrative boundary for managing and securing them.
 
-<img src="./zpr_structure.png" width="500" height="value">
+A Security Attribute is a label that can be assigned to supported OCI resources and referenced in ZPR policies to control communication between endpoints based on their assigned attributes.
+
+The diagrams below illustrate the **ZPR Namespace and Security Attribute structure** and show the exact configuration defined in `oneoe_zpr.json`, including each Namespace and the Security Attributes and their corresponding values contained within it.
+
+<img src="./zpr_struc.png" width="900" height="value">
+
+
+
+
+
 
 &nbsp;
 
-<img src="./zpr_ns_structure.png" width="500" height="value">
-
-&nbsp;
+The diagram below illustrates the ZPR addon configuration within the One-OE Landing Zone.
 
 <img src="./oneoe_hubb_zpr.png" width="800" height="value">
 
-### Deployment
+&nbsp;
 
+The ZPR addon provides the following segregation of duties:
+- **grp-lz-security-admin** manages the ZPR Namespaces and Security Attributes created in the cmp-lz-security compartment, as well as the ZPR Policies specific to the deployed One-OE Landing Zone.
+- **grp-security-admin** manages all ZPR Namespaces, Security Attributes, and ZPR Policies across the tenancy.
+- **grp-lz-network-admin**, **grp-lz-prod-proj1-admin** and **grp-lz-preprod-proj1-admin** can associate the relevant Security Attributes with the respective network resources and workloads they manage.
+
+The required IAM groups and permissions to enforce this segregation of duties are defined in `oneoe_iam.json` and are already included in the deployed One-OE Landing Zone.
 
 &nbsp;
 
