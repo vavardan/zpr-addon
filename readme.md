@@ -22,7 +22,7 @@ For communication between two endpoints to succeed, all applicable network secur
 The animations below illustrate this multi-layer enforcement model.
 
 **First use case - communication allowed:**
-The Security team allows communication between the two endpoints through ZPR, while routing, Security Lists or NSGs, and OCI Network Firewall also permit the traffic. Because all applicable controls allow the communication - a logical AND, the destination endpoint can be reached.
+The Security team allows communication between the two endpoints through ZPR, while routing, Security Lists or NSGs, and Network Firewall also permit the traffic. Because all applicable controls allow the communication - a logical AND, the destination endpoint can be reached.
 
 &nbsp;
 <img src="./zpr_allow.gif" width="900" height="value">
@@ -43,7 +43,7 @@ A ZPR Security Attribute Namespace is a logical container for a set of related s
 
 A Security Attribute is a label that can be assigned to supported OCI resources and referenced in ZPR policies to control communication between endpoints based on their assigned attributes.
 
-The diagrams below illustrate the **ZPR Namespace and Security Attribute structure** and show the exact configuration defined in `oneoe_zpr.json`, including each Namespace and the Security Attributes and their corresponding values contained within it.
+The diagrams below illustrate the ZPR Namespace and Security Attribute structure (*diagram 1*) and the corresponding Namespaces and the Security Attributes they contain (*diagram 2*), as defined in the `oneoe_zpr.json` file.
 
 <img src="./zpr_struc.png" width="900" height="value">
 
