@@ -54,7 +54,9 @@ The diagrams below illustrate the **ZPR Namespace and Security Attribute structu
 
 &nbsp;
 
-The diagram below illustrates the ZPR addon configuration within the One-OE Landing Zone.
+The diagram below shows how the **ZPR addon is structured within the One-OE Landing Zone**, including:
+- **ZPR Policies**, defined at the tenancy root level.
+- **ZPR Namespaces** and their associated **Security Attributes**, hosted in the `cmp-lz-security` compartment.
 
 <img src="./oneoe_hubb_zpr.png" width="800" height="value">
 
@@ -68,6 +70,9 @@ The ZPR addon provides the following segregation of duties:
 The required IAM groups and permissions to enforce this segregation of duties are defined in `oneoe_iam.json` and are already included in the deployed One-OE Landing Zone.
 
 &nbsp;
+
+### Deployment
+
 
 &nbsp;
 
