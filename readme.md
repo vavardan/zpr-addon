@@ -1,4 +1,4 @@
-# **[OCI ZRP Addon for Operating Entities Landing Zone](#)**
+# **[OCI ZPR Addon for Operating Entities Landing Zone](#)**
 
 &nbsp; 
 
