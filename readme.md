@@ -40,8 +40,15 @@ Routing, Security Lists or NSGs, and OCI Network Firewall allow the traffic, but
 ### ZPR addon configuration and structure
 
 
+<img src="./zpr_structure.png" width="500" height="value">
+
 &nbsp;
 
+<img src="./zpr_ns_structure.png" width="500" height="value">
+
+&nbsp;
+
+<img src="./oneoe_hubb_zpr.png" width="800" height="value">
 
 ### Deployment
 
@@ -71,9 +78,6 @@ Routing, Security Lists or NSGs, and OCI Network Firewall allow the traffic, but
 
 #### Summary
 
-&nbsp;
-
-### Configuration and deployment
 
 &nbsp; 
 
