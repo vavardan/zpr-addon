@@ -5,7 +5,7 @@
 ## **Overview**
 This addon integrates OCI **Zero Trust Packet Routing (ZPR)** into the One-OE Landing Zone as an additional network security and governance layer.
 
-The One-OE Landing Zone already uses multiple controls to secure network communication, including **routing, Security Lists, Network Security Groups (NSGs), and OCI Network Firewall**. These controls are primarily managed by the Network and Project administration teams.
+The One-OE Landing Zone already uses multiple controls to secure network communication, including **routing, Security Lists, Network Security Groups (NSGs), and Network Firewall**. These controls are primarily managed by the Network and Project administration teams.
 
 The ZPR addon complements these existing controls by introducing an independent, **attribute-based policy layer** managed by the Security administration team. This enables the Security team to enforce organization-wide security and compliance requirements without depending on, or replacing, the underlying network configuration.
 
@@ -15,9 +15,9 @@ A key objective of this addon is to provide a clear separation of responsibiliti
 
 - **Security** teams define and govern ZPR Namespaces, Security Attributes and ZPR Policies that determine which protected endpoints are allowed to communicate.
 
-For communication between two endpoints to succeed, all applicable network security controls must allow the traffic. **A permissive rule in one layer does not override a more restrictive rule in another layer.**
-
 &nbsp;
+
+For communication between two endpoints to succeed, all applicable network security controls must allow the traffic. **A permissive rule in one layer does not override a more restrictive rule in another layer.**
 
 The animations below illustrate this multi-layer enforcement model.
 
