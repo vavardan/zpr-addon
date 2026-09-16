@@ -22,7 +22,7 @@ For communication between two endpoints to succeed, all applicable network secur
 The animations below illustrate this multi-layer enforcement model.
 
 **First use case - communication allowed:**
-The Security team allows communication between the two endpoints through ZPR, while routing, Security Lists or NSGs, and OCI Network Firewall also permit the traffic. Because all applicable controls allow the communication- a logical AND, the destination endpoint can be reached.
+The Security team allows communication between the two endpoints through ZPR, while routing, Security Lists or NSGs, and OCI Network Firewall also permit the traffic. Because all applicable controls allow the communication - a logical AND, the destination endpoint can be reached.
 
 &nbsp;
 <img src="./zpr_allow.gif" width="900" height="value">
@@ -36,6 +36,15 @@ Routing, Security Lists or NSGs, and OCI Network Firewall allow the traffic, but
 <img src="./zpr_block.gif" width="900" height="value">
 
 &nbsp;
+
+### ZPR addon configuration and structure
+
+
+&nbsp;
+
+
+### Deployment
+
 
 &nbsp;
 
