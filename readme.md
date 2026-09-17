@@ -9,10 +9,13 @@ The One-OE Landing Zone already uses multiple controls to secure network communi
 
 The ZPR addon complements these existing controls by introducing an independent, **attribute-based policy layer** managed by the Security administration team. This enables the Security team to enforce organization-wide security and compliance requirements without depending on, or replacing, the underlying network configuration.
 
-A key objective of this addon is to provide a clear separation of responsibilities between the **Network**, **Project**, and **Security** teams:
-- **Network** and **Project** teams manage network connectivity and traditional network security controls.
+A key objective of this addon is to provide a clear segregation of duties between the Network, Project, and Security teams. The diagram below shows the IAM groups responsible for managing each network security layer.
 
-- **Security** teams define and govern ZPR Namespaces, Security Attributes and ZPR Policies that determine which protected endpoints are allowed to communicate.
+- **Network** and **Project** teams manage network connectivity and traditional network security controls, including routing, Security Lists, NSGs, and Network Firewall.
+
+- **Security** teams manage and govern ZPR Security Attribute Namespaces, Security Attributes, and ZPR Policies that define which protected endpoints are permitted to communicate.
+
+!!!! This model allows each team to manage its respective security controls independently while ensuring that network communication is permitted only when all applicable layers allow the traffic.
 
 <img src="./group_resp.png" width="1000" height="value">
 
