@@ -30,7 +30,7 @@ The Security team allows communication between the two endpoints through ZPR, wh
 &nbsp;
 
 **Second use case - communication blocked:**
-Routing, Security Lists or NSGs, and OCI Network Firewall allow the traffic, but the Security team does not permit the communication through ZPR policies. Because all applicable controls must allow the traffic, the communication is blocked and the destination endpoint cannot be reached.
+Routing, Security Lists or NSGs, and Network Firewall allow the traffic, but the Security team does not permit the communication through ZPR policies. Because all applicable controls must allow the traffic, the communication is blocked and the destination endpoint cannot be reached.
 
 &nbsp;
 <img src="./zpr_block.gif" width="900" height="value">
