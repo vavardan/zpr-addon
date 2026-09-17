@@ -48,13 +48,6 @@ The diagrams below illustrate the ZPR Namespace and Security Attribute structure
 
 <img src="./zpr_struc.png" width="900" height="value">
 
-
-
-
-
-
-&nbsp;
-
 &nbsp;
 
 The architecture diagram below illustrates the ZPR resources deployed by the ZPR addon as part of the One-OE Landing Zone, including:
@@ -68,7 +61,7 @@ The architecture diagram below illustrates the ZPR resources deployed by the ZPR
 
 > [!NOTE]
 > - Although the architecture diagram depicts Security Attributes alongside the workloads to illustrate their association with each resource, the Security Attributes themselves are defined within their respective ZPR Namespaces (see diagram 2) and all reside in the `cmp-lz-security` compartment.
->  - The VM in the management subnet and the workloads shown in the architecture diagram are included for illustration purposes only and are not part of the standard One-OE deployment.
+>  - The VM in the `mgmt` subnet and the environment-specific workloads shown in the architecture diagram are included for illustration purposes only and are not part of the standard One-OE deployment.
 
 &nbsp;
 
