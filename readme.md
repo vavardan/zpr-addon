@@ -13,18 +13,16 @@ A key objective of this addon is to provide a clear segregation of duties betwee
 
 - **Security** teams manage and govern ZPR Security Attribute Namespaces, Security Attributes, and ZPR Policies that define which protected endpoints are permitted to communicate.
 
-!!!! This model allows each team to manage its respective security controls independently while ensuring that network communication is permitted only when all applicable layers allow the traffic.
-
 <img src="./group_resp.png" width="1000" height="value">
-
 
 &nbsp;
 
-For communication between two endpoints to succeed, all applicable network security controls must allow the traffic. **A permissive rule in one layer does not override a more restrictive rule in another layer.**
+This model enables each team to independently manage its own security controls, while maintaining a unified enforcement model across all layers.</br> 
+Network communication is permitted only when every applicable control allows the traffic, and **a permissive rule in one layer does not override a more restrictive rule in another layer**.
 
-The animations below illustrate this multi-layer enforcement model.
+The animations below illustrate this multi-layer enforcement model:
 
-**First use case - communication allowed:**
+- **First use case - communication allowed:**
 The Security team allows communication between the two endpoints through ZPR, while routing, Security Lists or NSGs, and Network Firewall also permit the traffic. Because all applicable controls allow the communication - a logical AND, the destination endpoint can be reached.
 
 &nbsp;
@@ -32,7 +30,7 @@ The Security team allows communication between the two endpoints through ZPR, wh
 
 &nbsp;
 
-**Second use case - communication blocked:**
+- **Second use case - communication blocked:**
 Routing, Security Lists or NSGs, and Network Firewall allow the traffic, but the Security team does not permit the communication through ZPR policies. Because all applicable controls must allow the traffic, the communication is blocked and the destination endpoint cannot be reached.
 
 &nbsp;
