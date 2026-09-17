@@ -58,15 +58,15 @@ The diagrams below illustrate the ZPR Namespace and Security Attribute structure
 
 The architecture diagram below illustrates the ZPR resources deployed by the ZPR addon as part of the One-OE Landing Zone, including:
 - **ZPR Policies**, defined at the tenancy root level.
-- **ZPR Namespaces**, each containing the associated Security Attributes, residing in the `cmp-lz-security` compartment.
-- **Security Attribute associations**, illustrating how the defined Security Attributes are applied to Landing Zone workloads and OCI resources.
+- **ZPR Namespaces**, each containing its associated Security Attributes and residing in the `cmp-lz-security` compartment.
+- **Security Attribute associations**, illustrating how the defined Security Attributes are assigned to Landing Zone workloads and OCI resources.
 
 <img src="./oneoe_hubb_zpr.png" width="800" height="value">
 
 &nbsp;
 
 > [!NOTE]
-Although the architecture diagram depicts Security Attributes alongside the workloads to illustrate their association with each resource, the Security Attributes themselves are defined within their respective ZPR Namespaces (see diagram 2) and and all reside in the `cmp-lz-security` compartment.
+Although the architecture diagram depicts Security Attributes alongside the workloads to illustrate their association with each resource, the Security Attributes themselves are defined within their respective ZPR Namespaces (see diagram 2) and all reside in the `cmp-lz-security` compartment.
 
 &nbsp;
 
