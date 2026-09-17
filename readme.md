@@ -75,16 +75,12 @@ Although the architecture diagram depicts Security Attributes alongside the work
 
 &nbsp;
 
-| Legend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           | Description and configuration details |
-|:-|:-|
-| <img src="../../design/images/sl.png"  height="100" align="center"> | **grp-security-admin** manages all ZPR Namespaces, Security Attributes, and ZPR Policies across the tenancy. |
-| <img src="../../design/images/nsg.png"  height="100" align="center"> | **grp-lz-security-admin** manages the ZPR Namespaces and Security Attributes created in the cmp-lz-security compartment, as well as the ZPR Policies specific to the deployed One-OE Landing Zone. |
-| <img src="../../design/images/stateful.png"  height="23" align="center">| **grp-lz-network-admin**, **grp-lz-prod-proj1-admin** and **grp-lz-preprod-proj1-admin** can associate the relevant Security Attributes with the respective network resources and workloads they manage. |
-
 The ZPR addon provides the following segregation of duties:
-- **grp-security-admin** manages all ZPR Namespaces, Security Attributes, and ZPR Policies across the tenancy.
-- **grp-lz-security-admin** manages the ZPR Namespaces and Security Attributes created in the cmp-lz-security compartment, as well as the ZPR Policies specific to the deployed One-OE Landing Zone.
-- **grp-lz-network-admin**, **grp-lz-prod-proj1-admin** and **grp-lz-preprod-proj1-admin** can associate the relevant Security Attributes with the respective network resources and workloads they manage.
+| Groups&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            | Responsibilities |
+|:-|:-|
+| <img src="./sec_admin.png"  height="70" align="center"> | **grp-security-admin** manages all ZPR Namespaces, Security Attributes, and ZPR Policies across the tenancy. |
+| <img src="./lzsec_admin.png"  height="70" align="center"> | **grp-lz-security-admin** manages the ZPR Namespaces and Security Attributes created in the cmp-lz-security compartment, as well as the ZPR Policies specific to the deployed One-OE Landing Zone. |
+| <img src="./net_teams.png"  height="70" align="center"> | **grp-lz-network-admin**, **grp-lz-prod-proj1-admin** and **grp-lz-preprod-proj1-admin** can associate the relevant Security Attributes with the respective network resources and workloads they manage. |
 
 The required IAM groups and permissions to enforce this segregation of duties are defined in `oneoe_iam.json` and are already included in the deployed One-OE Landing Zone.
 
