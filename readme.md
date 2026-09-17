@@ -71,7 +71,8 @@ The architecture diagram below illustrates the ZPR resources deployed by the ZPR
 &nbsp;
 
 > [!NOTE]
-Although the architecture diagram depicts Security Attributes alongside the workloads to illustrate their association with each resource, the Security Attributes themselves are defined within their respective ZPR Namespaces (see diagram 2) and all reside in the `cmp-lz-security` compartment.
+> - Although the architecture diagram depicts Security Attributes alongside the workloads to illustrate their association with each resource, the Security Attributes themselves are defined within their respective ZPR Namespaces (see diagram 2) and all reside in the `cmp-lz-security` compartment.
+>  - The VM in the management subnet and the workloads shown in the architecture diagram are included for illustration purposes only and are not part of the standard One-OE deployment.
 
 &nbsp;
 
