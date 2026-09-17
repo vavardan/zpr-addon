@@ -14,7 +14,7 @@ A key objective of this addon is to provide a clear separation of responsibiliti
 
 - **Security** teams define and govern ZPR Namespaces, Security Attributes and ZPR Policies that determine which protected endpoints are allowed to communicate.
 
-<img src="./group_resp.png" width="400" height="value">
+<img src="./group_resp.png" width="1000" height="value">
 
 
 &nbsp;
