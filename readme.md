@@ -44,7 +44,7 @@ A ZPR Namespace is a logical container for a set of related security attributes.
 
 A Security Attribute is a label that can be assigned to supported OCI resources and referenced in ZPR policies to control communication between endpoints based on their assigned attributes.
 
-The diagrams below illustrate the ZPR Namespace and Security Attribute structure (*diagram 1*) and the corresponding Namespaces and the Security Attributes they contain (*diagram 2*), as defined in the `oneoe_zpr.json` configuration.
+The diagrams below illustrate the ZPR Namespace and Security Attribute structure (*diagram 1*) and the corresponding Namespaces and the Security Attributes they contain (*diagram 2*), as defined in the [oneoe_hub_b_zpr.json](oneoe_iam.json) configuration.
 
 <img src="./zpr_struc.png" width="900" height="value">
 
@@ -77,6 +77,12 @@ All the required IAM policies to enforce this segregation of duties are defined 
 &nbsp;
 
 ### ZPR addon configuration & deployment
+
+> [!NOTE]
+> - This guidance provides ZPR JSON template configuration and architecture desing for One-OE + Hub B deplyoment. While it uses the [Hub B model](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/hub_b/readme.md) as a reference, the process is applicable to all [Hub models](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/readme.md).<br> 
+
+> [!NOTE]
+> This guidance provides the ZPR JSON template configuration and reference architecture for a One-OE deployment based on the [Hub B model](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/hub_b/readme.md). While Hub B is used as the reference implementation, the overall process applies to all supported [Hub models](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/readme.md). ZPR configurations for additional Hub models will be available soon.
 
 Input configuration for ZPR addon 
 
@@ -115,7 +121,7 @@ The ZPR addon creates all required ZPR resources and policies for a `One-OE + Hu
 &nbsp;
 
 #### Summary
-
+The OCI ZPR addon adds an attribute-based, zero-trust security layer to the One-OE Landing Zone. It strengthens governance by allowing Security teams to centrally define and enforce communication policies independently of network administration. By limiting access to explicitly authorized endpoints, ZPR helps reduce lateral movement and contain the blast radius of a security incident.
 
 &nbsp; 
 
