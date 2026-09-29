@@ -79,10 +79,10 @@ All the required IAM policies to enforce this segregation of duties are defined 
 ### ZPR addon configuration & deployment
 
 > [!NOTE]
-> - This guidance provides ZPR JSON template configuration and architecture desing for One-OE + Hub B deplyoment. While it uses the [Hub B model](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/hub_b/readme.md) as a reference, the process is applicable to all [Hub models](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/readme.md).<br> 
+> This guidance provides the ZPR JSON template configuration and reference architecture for a One-OE deployment based on the [Hub B model](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/hub_b/readme.md). While Hub B is used as the reference implementation, the overall process applies to all supported [Hub models](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/readme.md).<br>
+> ZPR configurations for additional Hub models will be available soon.
 
-> [!NOTE]
-> This guidance provides the ZPR JSON template configuration and reference architecture for a One-OE deployment based on the [Hub B model](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/hub_b/readme.md). While Hub B is used as the reference implementation, the overall process applies to all supported [Hub models](https://github.com/oci-landing-zones/oci-landing-zone-operating-entities/blob/master/addons/oci-hub-models/readme.md). ZPR configurations for additional Hub models will be available soon.
+&nbsp;
 
 Input configuration for ZPR addon 
 
