@@ -38,7 +38,7 @@ Routing, Security Lists or NSGs, and Network Firewall allow the traffic, but the
 
 &nbsp;
 
-### ZPR addon configuration and structure
+### ZPR addon structure
 
 A ZPR Namespace is a logical container for a set of related security attributes. Namespaces help organize security attributes and provide a clear administrative boundary for managing and securing them.
 
