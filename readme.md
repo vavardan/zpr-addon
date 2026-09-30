@@ -44,7 +44,7 @@ A ZPR Namespace is a logical container for a set of related security attributes.
 
 A Security Attribute is a label that can be assigned to supported OCI resources and referenced in ZPR policies to control communication between endpoints based on their assigned attributes.
 
-The diagrams below illustrate the ZPR Namespace and Security Attribute structure (*diagram 1*) and the corresponding Namespaces and the Security Attributes they contain (*diagram 2*), as defined in the [oneoe_hub_b_zpr.json](oneoe_iam.json) configuration.
+The diagrams below illustrate the ZPR Namespace and Security Attribute structure (*diagram 1*) and the corresponding Namespaces and the Security Attributes they contain (*diagram 2*), as defined in the ZPR addon configuration template.
 
 <img src="./zpr_struc.png" width="900" height="value">
 
@@ -114,7 +114,7 @@ After the stack is created and the required configuration and dependencies have 
 &nbsp;
 
 > [!IMPORTANT]
-The ZPR addon creates all required ZPR resources and policies for a `One-OE + Hub B` deployment. However, it **does not** configure Security Attribute associations for the respective workloads or resources, such as Network Firewalls, Load Balancers, compute instances, or databases, as depicted in the architecture diagram above. As a result, deploying the ZPR addon alone **does not** immediately enforce or block network traffic based on ZPR policies.
+The ZPR addon creates all required ZPR resources and policies for a `One-OE + Hub B` deployment. However, it **does not** configure Security Attribute associations for the respective workloads or resources, such as Network Firewalls, Load Balancers, compute instances, or databases. As a result, deploying the ZPR addon alone **does not** immediately enforce or block network traffic based on ZPR policies.
 >
 > To make the ZPR controls fully functional, the required Security Attribute associations **must be** implemented separately, either through an additional deployment stack or manual configuration.
 
