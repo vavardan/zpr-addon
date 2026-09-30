@@ -8,7 +8,7 @@ The One-OE Landing Zone already uses multiple controls to secure network communi
 The ZPR addon complements these existing controls by introducing an independent, **attribute-based policy layer** managed by the Security administration team. This enables the Security team to enforce organization-wide security and compliance requirements without depending on, or replacing, the underlying network configuration.
 
 ZPR also controls the permitted routing path, ensuring that the traffic follows the network path defined by the ZPR policy rather than using an alternative route, even if that route would otherwise provide connectivity.</br>
-**Note:** ZPR does not create the route itself. The required route must already exist in the underlying route tables; ZPR only determines whether traffic using that network path is authorized.
+**Note:** ZPR does not create the route itself - the required route must already exist in the underlying route tables; ZPR only determines whether traffic using that network path is authorized.
 
 &nbsp;
 
