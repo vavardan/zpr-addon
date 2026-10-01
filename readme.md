@@ -136,12 +136,3 @@ Copyright (c) 2026 Oracle and/or its affiliates.
 Licensed under the Universal Permissive License (UPL), Version 1.0.
 
 See [LICENSE](/LICENSE.txt) for more details.
-
-
-| Cell1| Cell2 | Cell3 |
-|------|-------|-------|
-| merge right ||       |
-| merge|       |       |
-| below|^      |^      |
-| merge both  || value1|
-|^            || value2|
